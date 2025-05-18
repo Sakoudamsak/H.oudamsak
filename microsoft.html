@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <title>ការណែនាំ Microsoft Outlook</title>
+  <style>
+    @font-face {
+      font-family: 'Khmer OS Muol Light';
+      src: url('https://cdn.jsdelivr.net/gh/googlei18n/khmer@master/fonts/KhmerOSmuollight.ttf') format('truetype');
+    }
+    
+    :root {
+      --khmer-red: #12efeb;
+      --khmer-gold: #032f6d;
+      --khmer-blue: #1A4F8B;
+      --khmer-green: #4C8C2B;
+      --khmer-cream: #c6c3ba8d;
+      --khmer-dark: #2A2118;
+    }
+    
+    body {
+      font-family: 'Khmer OS Muol Light', 'Khmer OS', 'Moul', sans-serif;
+      background-color: var(--khmer-cream);
+      color: var(--khmer-dark);
+      margin: 0;
+      padding: 0;
+      line-height: 1.8;
+    }
+    
+    .container {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      min-height: 100vh;
+    }
+    
+    .sidebar {
+      background: linear-gradient(to bottom, var(--khmer-red), #A51C30);
+      padding: 2rem 1.5rem;
+      color: white;
+      box-shadow: 3px 0 10px rgba(0,0,0,0.2);
+    }
+    
+    .sidebar h2 {
+      font-family: 'Khmer OS Muol Light';
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--khmer-gold);
+      text-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--khmer-gold);
+    }
+    
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .sidebar li {
+      margin-bottom: 1.2rem;
+    }
+    
+    .sidebar a {
+      display: block;
+      padding: 0.8rem 1.2rem;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: all 0.3s;
+      background-color: rgba(255,255,255,0.1);
+      font-size: 1.1rem;
+      text-align: center;
+    }
+    
+    .sidebar a:hover {
+      background-color: var(--khmer-gold);
+      color: #000;
+      transform: translateX(5px);
+    }
+    
+    .content {
+      padding: 3rem;
+      background-color: var(--khmer-cream);
+    }
+    
+    section {
+      margin-bottom: 3rem;
+      background-color: white;
+      padding: 2.5rem;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      border-left: 8px solid var(--khmer-blue);
+    }
+    
+    section h2 {
+      font-family: 'Khmer OS Muol Light';
+      color: var(--khmer-red);
+      font-size: 1.8rem;
+      margin-bottom: 1.8rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 2px solid var(--khmer-gold);
+    }
+    
+    .step {
+      margin-bottom: 2rem;
+      padding-left: 3rem;
+      position: relative;
+      font-family: 'Khmer OS', sans-serif;
+    }
+    
+    .step::before {
+      content: "៖";
+      position: absolute;
+      left: 1rem;
+      color: var(--khmer-blue);
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    
+    .guide-image {
+      max-width: 100%;
+      height: auto;
+      border: 3px solid var(--khmer-gold);
+      border-radius: 8px;
+      margin: 1.2rem 0;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+      transition: transform 0.3s;
+    }
+    
+    .guide-image:hover {
+      transform: scale(1.02);
+    }
+    
+    .success {
+      background-color: rgba(76, 140, 43, 0.2);
+      color: var(--khmer-green);
+      padding: 1.2rem;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      font-weight: bold;
+      border-left: 5px solid var(--khmer-green);
+      font-size: 1.2rem;
+      text-align: center;
+      font-family: 'Khmer OS Muol Light';
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      
+      .sidebar {
+        padding: 1.5rem;
+      }
+      
+      .content {
+        padding: 2rem;
+      }
+      
+      section {
+        padding: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>កម្មវិធី Microsoft Outlook</h2>
+      <ul>
+        <li><a href="#install">តម្លើងកម្មវិធី</a></li>
+        <li><a href="#create">បង្កើតគណនី</a></li>
+        <li><a href="#configure">ការកំណត់</a></li>
+      </ul>
+    </aside>
+    
+    <main class="content">
+      <section id="install">
+        <h2>វិធីតម្លើងកម្មវិធី</h2>
+        
+        <div class="step">
+          <p>1. ចូលទៅកាន់គេហទំព័រ Microsoft Outlook</p>
+          <img src="imag/imgpic1 (1).png" class="guide-image" alt="ជំហានទី១ ក្នុងការតម្លើង">
+        </div>
+        
+        <div class="step">
+          <p>2. រកឃើញប៊ូតុង Download</p>
+          <img src="imag/imgpic1 (2).png" class="guide-image" alt="ជំហានទី២ ក្នុងការតម្លើង">
+        </div>
+        
+        <div class="step">
+          <p>3. ចុចលើប៊ូតុង Download</p>
+          <img src="imag/imgpic1 (3).png" class="guide-image" alt="ជំហានទី៣ ក្នុងការតម្លើង">
+          <img src="imag/imgpic1 (4).png" class="guide-image" alt="ជំហានទី៣ ក្នុងការតម្លើង">
+        </div>
+      </section>
+
+      <section id="create">
+        <h2>របៀបបង្កើតគណនី</h2>
+        
+        <div class="step">
+          <p>1. បើកកម្មវិធី Outlook</p>
+          <img src="imag/imgpic1 (5).png" class="guide-image" alt="ជំហានទី១ បង្កើតគណនី">
+        </div>
+        
+        <div class="step">
+          <p>2. ចុចលើប៊ូតុង Continue</p>
+          <img src="imag/imgpic1 (6).png" class="guide-image" alt="ជំហានទី២ បង្កើតគណនី">
+        </div>
+        
+        <div class="step">
+          <p>3. បញ្ចូលអ៊ីមែល</p>
+          <img src="imag/imgpic1 (7).png" class="guide-image" alt="ជំហានទី៣ បង្កើតគណនី">
+        </div>
+        
+        <div class="step">
+          <p>4. បង្កើតពាក្យសម្ងាត់</p>
+          <img src="imag/imgpic1 (8).png" class="guide-image" alt="ជំហានទី៤ បង្កើតគណនី">
+        </div>
+        
+        <div class="step">
+          <p>5. បញ្ចូលប្រទេស និងថ្ងៃខែឆ្នាំកំណើត</p>
+          <img src="imag/imgpic1 (9).png" class="guide-image" alt="ជំហានទី៥ បង្កើតគណនី">
+        </div>
+        
+        <div class="step">
+          <p>6. ចុចលើប៊ូតុង 'Next'</p>
+          <img src="imag/imgpic1 (10).png" class="guide-image" alt="ជំហានទី៦ បង្កើតគណនី">
+        </div>
+        
+        <div class="success">បានបង្កើតគណនីដោយជោគជ័យ!</div>
+        <img src="imag/imgpic1 (11).png" class="guide-image" alt="រូបភាពបង្ហាញពីការបង្កើតគណនីជោគជ័យ">
+      </section>
+
+      <section id="configure">
+        <h2>របៀបផ្ញើអ៊ីមែល</h2>
+        
+        <div class="step">
+          <p>1. បើកគណនី</p>
+          <img src="imag/imgpic1 (12).png" class="guide-image" alt="ជំហានទី១ ផ្ញើអ៊ីមែល">
+        </div>
+        
+        <div class="step">
+          <p>2. ចុចលើប៊ូតុង 'New mail'</p>
+          <img src="imag/imgpic1 (13).png" class="guide-image" alt="ជំហានទី២ ផ្ញើអ៊ីមែល">
+        </div>
+        
+        <div class="step">
+          <p>3. បញ្ចូលចំណងជើង និងមាតិកាអ៊ីមែល</p>
+          <img src="imag/imgpic1 (16).png" class="guide-image" alt="ជំហានទី៣ ផ្ញើអ៊ីមែល">
+        </div>
+        
+        <div class="step">
+          <p>4. ចុចលើប៊ូតុង 'Send'</p>
+          <img src="imag/imgpic1 (17).png" class="guide-image" alt="ជំហានទី៤ ផ្ញើអ៊ីមែល">
+        </div>
+        
+        <div class="success">បានផ្ញើអ៊ីមែលដោយជោគជ័យ!</div>
+        <img src="imag/imgpic1 (18).jpg" class="guide-image" alt="រូបភាពបង្ហាញពីការផ្ញើអ៊ីមែលជោគជ័យ">
+      </section>
+    </main>
+  </div>
+</body>
+</html>
